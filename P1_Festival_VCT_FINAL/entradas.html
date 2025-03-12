@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TICKETS</title>
+        <link rel="stylesheet" href="assets/css/styles_2.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon_Valorant.png">
+    </head>
+    <body>
+        <header>
+            <h1 class="secondary-title">Buy tickets now!</h1>
+            <p class="secondary-text">Secure your spot now and choose your preferred seating option.</p>
+        </header>
+        <main>
+            <section id="ticketList">
+                <form action="">
+                    <div>
+                        <label for="ES-Tier1">Early Stage Tier 1 - 36.30€</label>
+                        <input
+                            type="number"
+                            name="ES-Tier1"
+                            id="ES-Tier1"
+                            min="0"
+                            value="0"
+                            data-price="36.30" />
+                    </div>
+                    <div>
+                        <label for="ES-Tier1-W">Early Stage Tier 1 Weekend - 48.40€</label>
+                        <input
+                            type="number"
+                            name="ES-Tier1-W"
+                            id="ES-Tier1-W"
+                            min="0"
+                            value="0"
+                            data-price="48.40" />
+                    </div>
+                    <div>
+                        <label for="ES-Tier2-W">Early Stage Tier 2 Weekend - 36.30€</label>
+                        <input
+                            type="number"
+                            name="ES-Tier2-W"
+                            id="ES-Tier2-W"
+                            min="0"
+                            value="0"
+                            data-price="36.30" />
+                    </div>
+                    <div>
+                        <label for="FS-Tier1-W">Finals Stage Tier 1 Weekend - 76.53€</label>
+                        <input
+                            type="number"
+                            name="FS-Tier1-W"
+                            id="FS-Tier1-W"
+                            min="0"
+                            value="0"
+                            data-price="76.53" />
+                    </div>
+                    <div>
+                        <label for="FS-Tier2-W">Finals Stage Tier 2 Weekend - 62.22€</label>
+                        <input
+                            type="number"
+                            name="FS-Tier2-W"
+                            id="FS-Tier2-W"
+                            min="0"
+                            value="0"
+                            data-price="62.22" />
+                    </div>
+                    <div>
+                        <label for="FS-P">Finals Stage Premium Tier Weekend - 84.70€</label>
+                        <input
+                            type="number"
+                            name="FS-P"
+                            id="FS-P"
+                            min="0"
+                            value="0"
+                            data-price="84.70" />
+                    </div>
+                    <div class="total-price-cont">
+                        <p>Total price:</p>
+                        <p id="totalPrice"></p>
+                    </div>
+                    <input id="buyTicket" type="submit" value="Go to payment" class="disabled" />
+                </form>
+                    <picture class="secondary-background">
+                        <img loading="lazy" decoding="async" src="assets/img/stage-4.webp" alt="meeting" width="1920" height="486" aria-hidden="true">
+                    </picture>  
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="container">
+                <div class="top">
+                    <a aria-label="go back to home" class="logo" href="index.html">
+                        <img class="logo-img" loading="lazy" decoding="async" src="assets/img/VCT_2024_white.png" alt="logo" width="168" height="48">
+                    </a>
+                    <ul class="ul">
+                        <li class="li">
+                            <a href="../P1_Festival_JSfixed-modal/index.html" class="link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="li">
+                            <a href="" class="link">
+                                About
+                            </a>
+                        </li>
+                        <li class="li">
+                            <a href="https://playvalorant.com/en-us/download/" target="_blank" class="link">
+                                Download
+                            </a>
+                        </li>
+                        <li class="li">
+                            <a href="#about" class="link">
+                                About
+                            </a>
+                        </li>
+                        <li class="li">
+                            <a href="#posts" class="link">
+                                News
+                            </a>
+                        </li>
+                        <li class="li">
+                            <a href="#faq" class="link">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <div class="contact-group">
+                        <div class="social">
+                            <a href="https://www.facebook.com/VALORANT/" target="_blank" class="social-link">
+                                <i class="fa-brands fa-facebook-f social-icon" style="color: #8c8c8c;"></i>
+                            </a>
+                       
+                            <a href="https://x.com/playvalorant?lang=en" target="_blank" class="social-link">
+                                <i class="fa-brands fa-x-twitter social-icon" style="color: #8c8c8c;"></i>
+                            </a>
+                        
+                            <a href="https://discord.com/invite/valorant" target="_blank" class="social-link">
+                                <i class="fa-brands fa-discord social-icon" style="color: #8c8c8c;"></i>
+                            </a>
+                        
+                            <a href="https://www.youtube.com/channel/UC8CX0LD98EDXl4UYX1MDCXg" target="_blank" class="social-link">
+                                <i class="fa-brands fa-youtube social-icon" style="color: #8c8c8c;"></i>                    
+                            </a>
+                        </div>
+                    </div>      
+                    <span class="copyright">
+                        © 2024 Riot Games. All Rights Reserved - <a href="" class="copyright-link">VALORANT CHAMPIONS TOUR</a>
+                    </span>
+                </div>
+            </div>
+    
+        </footer>
+
+        <script src="assets/js/script_2.js"></script>
+    </body>
+</html>
